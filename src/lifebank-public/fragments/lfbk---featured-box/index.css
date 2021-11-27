@@ -1,0 +1,95 @@
+/* Importing FontAwesome Font v6.0.0-beta2 Regular Icons
+** see more in: https://fontawesome.com/v6.0/icons?s=solid%2Cbrands
+**/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+.featured-box {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.featured-box .icon {
+  width: 65px;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+
+.featured-box .icon i::before {
+  font-size: 30px;
+  margin-top: 16px;
+}
+
+.featured-box h3 {
+  margin-bottom: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  font-size: 20px;
+}
+
+.featured-box h3 a {
+  display: inline-block;
+}
+
+.featured-box p {
+  font-size: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: var(--body-color);
+}
+
+.featured-box::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 0;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(var(--color-brand-primary)), to(var(--color-brand-secondary)));
+  background: linear-gradient(90deg, var(--color-brand-primary) 0%, var(--color-brand-secondary) 100%);
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.featured-box:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.featured-box:hover::before {
+  width: 100%;
+}
+
+.featured-box:hover .icon {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  background-color: #ffffff !important;
+}
+
+.featured-box:hover h3 a {
+  color: #ffffff !important;
+}
+
+.featured-box:hover p{
+  color: #ffffff !important;
+}

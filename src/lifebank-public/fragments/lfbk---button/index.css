@@ -1,0 +1,106 @@
+.lfbk-button a.btn:not(.btn-borderless) {
+	font-weight: 700;
+	border: none;
+	padding: 14.5px 30px;
+	font-size: 14px;
+	line-height: initial;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	position: relative;
+	z-index: 1;
+	color: white;
+}
+.lfbk-button a.btn:not(.btn-inverted):not(.btn-borderless)::before,
+.lfbk-button a.btn-inverted:not(.btn-borderless)::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: -webkit-gradient(linear, left top, right top, from(var(--color-brand-primary)), to(var(--color-brand-secondary))); 
+	background: linear-gradient(
+		90deg, var(--color-brand-primary) 0%, var(--color-brand-secondary) 100%);
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.lfbk-button a.btn:not(.btn-inverted):not(.btn-borderless)::after,
+.lfbk-button a.btn-inverted:not(.btn-borderless)::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: -webkit-gradient(linear, left top, right top, from(var(--color-accent-1)), to(var(--color-accent-2)));
+  background: linear-gradient(90deg, var(--color-accent-1) 0%, var(--color-accent-2) 100%);
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+}
+
+.lfbk-button a.btn:not(.btn-borderless):hover, 
+.lfbk-button a.btn:not(.btn-borderless):focus {
+	background-color: transparent !important;
+	color: #ffffff !important;
+	-webkit-box-shadow: unset !important;
+	box-shadow: unset !important;
+}
+
+.lfbk-button a.btn:not(.btn-borderless)::after {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.lfbk-button a.btn:not(.btn-borderless):hover::before, 
+.lfbk-button a.btn:not(.btn-borderless):focus::before {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.lfbk-button a.btn:not(.btn-borderless):hover::after, 
+.lfbk-button a.btn:not(.btn-borderless):focus::after {
+	opacity: 1;
+	visibility: visible;
+}
+
+.lfbk-button a.btn-solid::after,
+.lfbk-button a.btn-solid::before {
+	border-radius: var(--border-radius-sm);
+}
+
+.lfbk-button a.btn-rounded::after,
+.lfbk-button a.btn-rounded::before {
+	border-radius: var(--border-radius-pill);
+}
+
+.lfbk-button a.btn-borderless:not(.btn-inverted) {	
+	background: -webkit-gradient(linear, left top, right top, from(var(--color-brand-primary)), to(var(--color-brand-secondary)));
+	background: linear-gradient(
+		90deg, var(--color-brand-primary) 0%, var(--color-brand-secondary) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	--btn-active-background-color: var(--color-action-primary-inverted);
+	--btn-active-border-color: var(--color-action-primary-active);
+	--btn-active-color: var(--color-action-primary-active);
+	--btn-default-color: var(--color-action-primary-default);
+	--btn-disabled-color: var(--color-action-primary-disabled);
+	--btn-hover-border-color: var(--color-action-primary-hover);
+	--btn-hover-color: var(--color-action-primary-hover);
+}
+
+.lfbk-button a.btn-borderless.btn-inverted {
+	background: -webkit-gradient(linear, left top, right top, from(var(--color-accent-1)), to(var(--color-accent-2)));
+	background: linear-gradient(
+		90deg, var(--color-accent-1) 0%, var(--color-accent-2) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	--btn-active-background-color: var(--white);
+	--btn-active-border-color: var(--color-accent-1);
+	--btn-disabled-color: var(--color-accent-1-lighten);
+	--btn-hover-border-color: var(--color-accent-1);
+}

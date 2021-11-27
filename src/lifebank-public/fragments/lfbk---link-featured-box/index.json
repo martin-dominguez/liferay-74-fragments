@@ -1,0 +1,58 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "accent-1",
+					"label": "Color",
+					"name": "iconColor",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"value": "primary "
+							},
+							{
+								"value": "secondary"
+							},
+							{
+								"value": "neutral"
+							},
+							{
+								"value": "accent-1"
+							},
+							{
+								"value": "accent-2"
+							},
+							{
+								"value": "accent-3"
+							},
+							{
+								"value": "accent-4"
+							},
+							{
+								"value": "accent-5"
+							},
+							{
+								"value": "accent-6"
+							}
+						]
+					}
+        },
+        {
+					"dataType": "string",
+					"defaultValue": "info",
+					"label": "FA Free Icon",
+					"description": "See more in: https://fontawesome.com/v6.0/icons?s=solid%2Cbrands",
+					"name": "icon",
+					"type": "text",
+					"typeOptions": {
+						"placeholder": "info"
+					}
+				}
+        
+      ]
+    }
+  ]
+}

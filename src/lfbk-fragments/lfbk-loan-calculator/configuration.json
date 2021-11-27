@@ -1,0 +1,206 @@
+{
+  "fieldSets": [
+    {
+      "fields": [
+        {
+          "dataType": "string",
+					"defaultValue": "Loan Amount",
+					"description": "amount-label-description",
+          "type": "text",
+          "label": "amount-label-name",
+          "name": "amountLabel",
+					"typeOptions": {
+						"placeholder": "Loan Amount"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "EUR",
+					"description": "amount-units-description",
+          "type": "text",
+          "label": "amount-units-name",
+          "name": "amountUnits",
+					"typeOptions": {
+						"placeholder": "EUR"
+					}
+        },
+				{
+          "dataType": "string",
+					"defaultValue": "2000",
+					"description": "amount-init-value-description",
+          "type": "text",
+					"name": "amountInitValue",
+					"label": "amount-init-value-name",
+					"typeOptions": {
+						"placeholder": "2000"
+					}
+				},
+        {
+          "dataType": "string",
+					"defaultValue": "1000",
+					"description": "amount-min-value-description",
+          "type": "text",
+          "label": "amount-min-value-name",
+          "name": "amountMinValue",
+					"typeOptions": {
+						"placeholder": "1000"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "3000",
+					"description": "amount-max-value-description",
+          "type": "text",
+          "label": "amount-max-value-name",
+          "name": "amountMaxValue",
+					"typeOptions": {
+						"placeholder": "3000"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "500",
+					"description": "amount-step-size-description",
+          "type": "text",
+          "label": "amount-step-size-name",
+          "name": "amountStepSize",
+					"typeOptions": {
+						"placeholder": "500"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "Loan Term",
+					"description": "term-label-description",
+          "type": "text",
+          "label": "term-label-name",
+          "name": "termLabel",
+					"typeOptions": {
+						"placeholder": "Loan Term"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "months",
+					"description": "term-units-description",
+          "type": "text",
+          "label": "term-units-name",
+          "name": "termUnits",
+					"typeOptions": {
+						"placeholder": "months"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "36",
+					"description": "term-init-value-description",
+          "type": "text",
+          "label": "term-init-value-name",
+          "name": "termInitValue",
+					"typeOptions": {
+						"placeholder": "36"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "12",
+					"description": "term-min-value-description",
+          "type": "text",
+          "label": "term-min-value-name",
+          "name": "termMinValue",
+					"typeOptions": {
+						"placeholder": "12"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "60",
+					"description": "term-max-value-description",
+          "type": "text",
+          "label": "term-max-value-name",
+          "name": "termMaxValue",
+					"typeOptions": {
+						"placeholder": "60"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "1",
+					"description": "term-step-size-description",
+          "type": "text",
+          "label": "term-step-size-name",
+          "name": "termStepSize",
+					"typeOptions": {
+						"placeholder": "1"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "1",
+					"description": "months-per-term-unit-description",
+          "type": "text",
+          "label": "months-per-term-unit-name",
+          "name": "monthsPerTermUnit",
+					"typeOptions": {
+						"placeholder": "1"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "Interest Rate",
+					"description": "interest-rate-label-description",
+          "type": "text",
+          "label": "interest-rate-label-name",
+          "name": "interestRateLabel",
+					"typeOptions": {
+						"placeholder": "Interest Rate"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "4.60",
+					"description": "interest-rate-init-value-description",
+          "type": "text",
+          "label": "interest-rate-init-value-name",
+          "name": "interestRateInitValue",
+					"typeOptions": {
+						"placeholder": "4.60"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "3.0",
+					"description": "interest-rate-min-value-description",
+          "type": "text",
+          "label": "interest-rate-min-value-name",
+          "name": "interestRateMinValue",
+					"typeOptions": {
+						"placeholder": "3.0"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "9.0",
+					"description": "interest-rate-max-value-description",
+          "type": "text",
+          "label": "interest-rate-max-value-name",
+          "name": "interestRateMaxValue",
+					"typeOptions": {
+						"placeholder": "9.0"
+					}
+        },
+        {
+          "dataType": "string",
+					"defaultValue": "0.20",
+					"description": "interest-rate-step-size-description",
+          "type": "text",
+          "label": "interest-rate-step-size-name",
+          "name": "interestRateStepSize",
+					"typeOptions": {
+						"placeholder": "0.20"
+					}
+        }
+      ]
+    }
+  ]
+}

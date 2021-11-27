@@ -1,0 +1,145 @@
+/* Importing FontAwesome Font v6.0.0-beta2 Regular Icons
+** see more in: https://fontawesome.com/v6.0/icons?s=solid%2Cbrands
+**/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
+
+.link-featured-box {
+  text-align: center;
+  position: relative;
+  padding: 75px 25px 40px 25px;
+  overflow: hidden;
+}
+
+.link-featured-box .icon {
+  -webkit-transition: .4s;
+  transition: .4s;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  margin-top: -12px;
+}
+
+.link-featured-box .icon i::before {
+  font-size: 55px;
+}
+
+.link-featured-box h3 {
+  -webkit-transition: .4s;
+  transition: .4s;
+  margin-bottom: 0;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.link-featured-box p {
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 15px;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+
+.link-featured-box .read-more-btn {
+  background: -webkit-gradient(linear, left top, right top, from( var(--primary)), to(var(--secondary)));
+  background: linear-gradient(90deg, var(--color-brand-primary) 0%, var(--color-brand-secondary) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .6;
+  transition: .6;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.link-featured-box .read-more-btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  height: 1px;
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary)), to(var(--secondary)));
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+}
+
+.link-featured-box .read-more-btn:hover::before {
+  width: 100%;
+}
+
+.link-featured-box:hover .icon {
+  top: 23px;
+  -webkit-animation: iconTop 0.4s ease-in-out;
+          animation: iconTop 0.4s ease-in-out;
+}
+
+.link-featured-box:hover h3 {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.link-featured-box:hover p {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.link-featured-box:hover .read-more-btn {
+  opacity: 1;
+  visibility: visible;
+  bottom: 23px;
+}
+
+@-webkit-keyframes iconTop {
+  0% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@keyframes iconTop {
+  0% {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  25% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -70%);
+            transform: translate(-50%, -70%);
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}

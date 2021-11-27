@@ -1,0 +1,81 @@
+{
+	"fieldSets": [
+		{
+			"fields": [
+				{
+					"dataType": "string",
+					"defaultValue": "h1",
+					"label": "heading-level",
+					"name": "headingLevel",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"value": "h1"
+							},
+							{
+								"value": "h2"
+							}
+						]
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": false,
+					"label": "inverted",
+					"name": "inverted",
+					"type": "checkbox"
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "center",
+					"label": "align",
+					"name": "align",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"value": "left"
+							},
+							{
+								"value": "center"
+							},
+							{
+								"value": "right"
+							}
+						]
+					}
+				},
+				{
+					"dataType": "string",
+					"defaultValue": "accent-1",
+					"label": "Color",
+					"name": "barColor",
+					"type": "select",
+					"typeOptions": {
+						"validValues": [
+							{
+								"value": "accent-1"
+							},
+							{
+								"value": "accent-2"
+							},
+							{
+								"value": "accent-3"
+							},
+							{
+								"value": "accent-4"
+							},
+							{
+								"value": "accent-5"
+							},
+							{
+								"value": "accent-6"
+							}
+						]
+					}
+				}
+			]
+		}
+	]
+}

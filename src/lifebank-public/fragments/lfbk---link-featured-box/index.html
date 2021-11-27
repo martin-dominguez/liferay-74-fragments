@@ -1,0 +1,27 @@
+[#assign backgroundType = configuration.iconColor?split("-")?first /]
+
+<div class="link-featured-box">
+	<div class="icon">
+			<i class="fas fa-${configuration.icon} text-${backgroundType} text-${configuration.iconColor}"></i>
+	</div>
+	<h3
+		 data-lfr-editable-id="lfb-text01" 
+		 data-lfr-editable-type="text">
+			Link Featured Box
+	</h3>
+	<p
+		 data-lfr-editable-id="lfb-text02" 
+		 data-lfr-editable-type="rich-text"
+	>
+			Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.
+	</p>
+		<a 
+			 id="lfb-${fragmentEntryLinkNamespace}-link"
+			 data-lfr-editable-id="link" 
+			 data-lfr-editable-type="link"
+			 class="read-more-btn" 
+			 href=""
+		>
+			Read More
+		</a>
+</div>

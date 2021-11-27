@@ -1,0 +1,25 @@
+[#assign backgroundType = configuration.iconColor?split("-")?first /]
+
+<div class="featured-box">
+  <div class="icon background-${backgroundType} bg-${configuration.iconColor}">
+		<i class="fas fa-${configuration.icon} text-white"></i>
+  </div>
+  <h3>
+		<a 
+			 href="" 
+			 id="fb-${fragmentEntryLinkNamespace}-link"
+			 data-lfr-editable-id="link" 
+			 data-lfr-editable-type="link"
+			 class="text-${backgroundType} text-${configuration.iconColor}"
+		>
+			Single Features Box
+		</a>
+  </h3>
+  <p 
+		 data-lfr-editable-id="fb-text01" 
+		 data-lfr-editable-type="rich-text"
+	>
+		Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt 
+		ut labore dolore magna aliqua.
+	</p>
+</div>
